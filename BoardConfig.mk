@@ -31,11 +31,7 @@ BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 TARGET_KERNEL_CONFIG := falcon_defconfig
 
 # Disable basic dexpreopt enabled from msm8226-common
-WITH_DEXPREOPT := false
-
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_falcon
-TARGET_RECOVERY_DEVICE_MODULES := libinit_falcon
+#WITH_DEXPREOPT := false
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
@@ -44,9 +40,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 880803840 # GPE, regular edition: 1023410176
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5930598400 # 5930614784 - 16384
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_CACHEIMAGE_PARTITION_SIZE := 694288384
-
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
 -include vendor/motorola/falcon/BoardConfigVendor.mk
