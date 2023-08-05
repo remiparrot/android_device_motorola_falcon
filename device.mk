@@ -20,6 +20,9 @@ $(call inherit-product, vendor/motorola/falcon/falcon-vendor.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += device/motorola/falcon
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
@@ -34,7 +37,6 @@ $(call inherit-product, device/motorola/falcon/system_prop.mk)
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.device.config.sh \
     init.target.rc
 
 # Sensors

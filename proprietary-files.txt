@@ -1,22 +1,22 @@
 # proprietary files for falcon
 
 # Audio
-vendor/etc/Bluetooth_cal.acdb
-vendor/etc/General_cal.acdb
-vendor/etc/Global_cal.acdb
-vendor/etc/Handset_cal.acdb
-vendor/etc/Hdmi_cal.acdb
-vendor/etc/Headset_cal.acdb
-vendor/etc/Speaker_cal.acdb
+etc/Bluetooth_cal.acdb
+etc/General_cal.acdb
+etc/Global_cal.acdb
+etc/Handset_cal.acdb
+etc/Hdmi_cal.acdb
+etc/Headset_cal.acdb
+etc/Speaker_cal.acdb
 
 # Touch fw
-vendor/firmware/aps-Falc-01300000-0130-falcon.tdat
-vendor/firmware/synaptics-s2316-13091704-175833-falcon.tdat
+etc/firmware/aps-Falc-01300000-0130-falcon.tdat
+etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat
 
 # Camera
-vendor/lib/hw/camera.msm8226.so:lib/hw/camera.vendor.msm8226.so
-vendor/lib/libmm-qcamera.so
-vendor/lib/libmmcamera_interface.so
+lib/hw/camera.msm8226.so:lib/hw/camera.vendor.msm8226.so
+lib/libmm-qcamera.so
+lib/libmmcamera_interface.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_iface_modules.so

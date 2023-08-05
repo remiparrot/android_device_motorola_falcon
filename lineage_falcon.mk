@@ -24,6 +24,13 @@ $(call inherit-product, device/motorola/falcon/device.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := falcon
 PRODUCT_NAME := lineage_falcon
-PRODUCT_BRAND := motorola
-PRODUCT_MODEL := falcon
-PRODUCT_MANUFACTURER := motorola
+PRODUCT_BRAND := Motorola
+PRODUCT_MODEL := Moto G
+PRODUCT_MANUFACTURER := Motorola
+PRODUCT_RELEASE_NAME := falcon
+PRODUCT_SHIPPING_API_LEVEL := 19
+
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)

@@ -26,9 +26,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on early-init
-    start falcon-config-sh
-
 on boot
     # AK9863 Magnetometer
     chown compass compass /sys/class/compass/akm8963/enable_acc
@@ -55,9 +52,3 @@ service akmd8963 /system/bin/akmd8963
     class main
     user compass
     group compass misc input
-
-service falcon-config-sh /vendor/bin/init.device.config.sh
-    class core
-    user root
-    oneshot
-    disabled
